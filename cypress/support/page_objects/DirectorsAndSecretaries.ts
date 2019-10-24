@@ -11,25 +11,23 @@ class DirectorsAndSecretaries {
         cy.checkForHiddenLabel('thead > :nth-child(2) > :nth-child(5)', 'Remove Links');
     }
 
-    selectOfficerToRemove(officerName) {
-        cy.get('tbody  tr td:nth-child(5)  a').as('RemoveLinks');
+    selectOfficerToRemove(officerName: string) {
         // This will select the Remove link of the named officer
-        this.selectOfficer('@RemoveLinks', officerName);
+        this.selectOfficer('tbody  tr td:nth-child(5)  a', officerName);
     }
 
-    selectOfficerToEdit(officerName) {
-        cy.get('tbody  tr td:nth-child(4)  a').as('EditLinks');
+    selectOfficerToEdit(officerName: string) {
         // This will select the Edit link of the named officer
-        this.selectOfficer('@EditLinks', officerName);
+        this.selectOfficer('tbody  tr td:nth-child(4)  a', officerName);
     }
 
-    selectOfficer(alias, officerName) {
-        cy.get(alias).each((element) => {
-            cy.get(element).invoke('text').then((text) => {
+    selectOfficer(elementId: string, officerName: string) {
+        cy.get(elementId).each(($el) => {
+            cy.get($el).invoke('text').then((text: string) => {
                 cy.log(text);
                 if(text.includes(officerName)) {
                     cy.log('Found the named officer.');
-                    cy.wrap(element).should('contain.text', officerName).click();
+                    cy.wrap($el).should('contain.text', officerName).click();
                 }
             })
 
