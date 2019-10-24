@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 class CompanyOverview  {
     
     selectAllForms() {
@@ -5,7 +7,7 @@ class CompanyOverview  {
         return this;
     }
 
-    selectLinkWithText(linkText) {
+    selectLinkWithText(linkText: string) {
         cy.contains(linkText).click();
         return this;
     }

@@ -17,5 +17,3 @@ declare namespace Cypress {
 
     }
   }
-
-  declare module 'CompanyOverview';

@@ -1,12 +1,10 @@
 /// <reference types="Cypress" />
 /// <reference path="../../../support/index.d.ts" />
 
-// import CompanyOverview from '../../../support/page_objects/CompanyOverview'
+import CompanyOverview from '../../../support/page_objects/CompanyOverview'
 import CompanySignIn from '../../../support/page_objects/CompanySignIn'
 import ChangeRegisteredOffice from '../../../support/page_objects/ChangeRegisteredOffice'
 import SubmissionConfirmation from '../../../support/page_objects/SubmissionConfirmation'
-
-import companyOverview from 'CompanyOverview';
 
 beforeEach(()=> {
     // Sign into Webfiling
@@ -20,7 +18,7 @@ beforeEach(()=> {
 describe('Change of registered office address', () => {
     it('File successful AD01', () => {
         // Go to change registered office address
-        // const companyOverview = new CompanyOverview();
+        const companyOverview = new CompanyOverview();
         const changeRegisteredOffice = new ChangeRegisteredOffice();
         const submissionConfirmation = new SubmissionConfirmation();
 

@@ -1,6 +1,8 @@
+/// <reference types="Cypress" />
+
 class SubmissionConfirmation {
 
-    confirmHeadingContains(text) {
+    confirmHeadingContains(text: string) {
         cy.get('h1').should('have.text', text);
     }
 

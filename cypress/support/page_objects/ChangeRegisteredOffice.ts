@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 import Address from "../Address";
 
 class ChangeRegisteredOffice extends Address {
