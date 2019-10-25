@@ -22,7 +22,7 @@ class DirectorsAndSecretaries {
     }
 
     selectOfficer(elementId: string, officerName: string) {
-        cy.get(elementId).each<HTMLTableDataCellElement>(($el: JQuery<HTMLElement>) => {
+        cy.get(elementId).each(($el: JQuery<HTMLElement>) => {
             const text = $el.text();
             cy.log(text);
             if (text.includes(officerName)) {
