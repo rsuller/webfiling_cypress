@@ -1,5 +1,3 @@
-/// <reference types="Cypress" />
-
 class CompanySignIn {
 
     enterCompanyDetails(companyNumber: string, authcode: string) {

@@ -1,5 +1,3 @@
-/// <reference types="Cypress" />
-
 class Address {
 
     changeAddress(propertyNumber: string, postcode: string) {

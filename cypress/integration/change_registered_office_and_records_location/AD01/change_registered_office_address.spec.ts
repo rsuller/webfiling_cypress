@@ -1,6 +1,3 @@
-/// <reference types="Cypress" />
-/// <reference path="../../../support/index.d.ts" />
-
 import CompanyOverview from '../../../support/page_objects/CompanyOverview'
 import CompanySignIn from '../../../support/page_objects/CompanySignIn'
 import ChangeRegisteredOffice from '../../../support/page_objects/ChangeRegisteredOffice'

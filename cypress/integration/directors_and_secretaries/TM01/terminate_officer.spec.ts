@@ -1,5 +1,3 @@
-/// <reference types="Cypress" />
-
 import CompanyOverview from '../../../support/page_objects/CompanyOverview'
 import CompanySignIn from '../../../support/page_objects/CompanySignIn'
 import AllForms from '../../../support/page_objects/AllForms'

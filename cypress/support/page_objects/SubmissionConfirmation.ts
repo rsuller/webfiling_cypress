@@ -1,5 +1,3 @@
-/// <reference types="Cypress" />
-
 class SubmissionConfirmation {
 
     confirmHeadingContains(text: string) {

@@ -22,7 +22,7 @@ class DirectorsAndSecretaries {
     }
 
     selectOfficer(elementId: string, officerName: string) {
-        cy.get(elementId).each(($el) => {
+        cy.get(elementId).each(($el: object) => {
             cy.get($el).invoke('text').then((text: string) => {
                 cy.log(text);
                 if(text.includes(officerName)) {
