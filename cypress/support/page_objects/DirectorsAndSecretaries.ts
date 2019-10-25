@@ -22,17 +22,13 @@ class DirectorsAndSecretaries {
     }
 
     selectOfficer(elementId: string, officerName: string) {
-        cy.get(elementId).each(($el: object) => {
-            cy.get($el).invoke('text').then((text: string) => {
-                cy.log(text);
-                if(text.includes(officerName)) {
-                    cy.log('Found the named officer.');
-                    cy.wrap($el).should('contain.text', officerName).click();
-                }
-            })
-
+        cy.get(elementId).each<HTMLTableDataCellElement>(($el: JQuery<HTMLElement>) => {
+            const text = $el.text();
+            cy.log(text);
+            if (text.includes(officerName)) {
+                cy.wrap($el).should('contain.text', officerName).click();
+            }
         })
-
     }
 
     applyDateOfTermination() {

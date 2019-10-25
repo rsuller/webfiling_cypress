@@ -6,7 +6,7 @@
     "baseUrl": "../node_modules",
     "target": "es6",
     "lib": ["es5", "es6", "dom"],
-    "types": ["cypress"]
+    "types": ["cypress", "jquery"]
   },
   
   "include": [
