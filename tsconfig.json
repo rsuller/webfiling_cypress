@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
+    "module": "commonjs",
     "strict": true,
     "baseUrl": "../node_modules",
     "target": "es6",
-    "lib": ["dom"],
+    "lib": ["es5", "es6", "dom"],
     "types": ["cypress"]
   },
   
   "include": [
-    "node_modules/cypress",
+    "node_modules/cypress/**/*",
     "cypress/**/*"
   ]
 }
