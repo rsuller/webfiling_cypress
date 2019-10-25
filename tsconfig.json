@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
     "module": "commonjs",
     "skipLibCheck": true,
     "strict": true,
-    "baseUrl": "../node_modules",
+    "baseUrl": ".",
     "target": "es6",
     "lib": ["es5", "es6", "dom"],
-    "types": ["cypress", "jquery"]
+    "types": ["cypress", "jquery"],
+    "paths": {
+      "@page-objects/*": ["cypress/support/page_objects/*"]
+    }
   },
   
   "include": [

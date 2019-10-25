@@ -1,7 +1,7 @@
-import CompanyOverview from '../../../support/page_objects/CompanyOverview'
-import CompanySignIn from '../../../support/page_objects/CompanySignIn'
-import ChangeRegisteredOffice from '../../../support/page_objects/ChangeRegisteredOffice'
-import SubmissionConfirmation from '../../../support/page_objects/SubmissionConfirmation'
+import CompanyOverview from '@page-objects/CompanyOverview'
+import CompanySignIn from '@page-objects/CompanySignIn'
+import ChangeRegisteredOffice from '@page-objects/ChangeRegisteredOffice'
+import SubmissionConfirmation from '@page-objects/SubmissionConfirmation'
 
 beforeEach(()=> {
     // Sign into Webfiling

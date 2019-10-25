@@ -1,7 +1,7 @@
-import CompanySignIn from '../../../support/page_objects/CompanySignIn'
-import CompanyOverview from '../../../support/page_objects/CompanyOverview'
-import NotificationOfSAIL from '../../../support/page_objects/NotificationOfSAIL'
-import AllForms from '../../../support/page_objects/AllForms'
+import CompanySignIn from '@page-objects/CompanySignIn'
+import CompanyOverview from '@page-objects/CompanyOverview'
+import NotificationOfSAIL from '@page-objects/NotificationOfSAIL'
+import AllForms from '@page-objects/AllForms'
 
 beforeEach(()=> {
     // Sign into Webfiling

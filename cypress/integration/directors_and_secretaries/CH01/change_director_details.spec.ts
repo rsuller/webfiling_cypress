@@ -1,8 +1,8 @@
-import CompanySignIn from '../../../support/page_objects/CompanySignIn'
-import CompanyOverview from '../../../support/page_objects/CompanyOverview'
-import AllForms from '../../../support/page_objects/AllForms'
-import DirectorAndSecretaries from '../../../support/page_objects/DirectorsAndSecretaries'
-import DirectorChangeDetailsPreFiling from '../../../support/page_objects/DirectorChangeDetailsPreFiling'
+import CompanySignIn from '@page-objects/CompanySignIn'
+import CompanyOverview from '@page-objects/CompanyOverview'
+import AllForms from '@page-objects/AllForms'
+import DirectorAndSecretaries from '@page-objects/DirectorsAndSecretaries'
+import DirectorChangeDetailsPreFiling from '@page-objects/DirectorChangeDetailsPreFiling'
 
 beforeEach(()=> {
     // Sign into Webfiling
