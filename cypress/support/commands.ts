@@ -23,10 +23,22 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+// import * as axe from "axe-core"
+// // cypress/support/index.js
+// Cypress.Commands.add('injectAxe', () => {
+//     cy.window({ log: false }).then((window: any) => {
+//       window.eval(axe)
+//     })
+//   })
+import "cypress-axe"
 
-// cypress/support/index.js
+  
 Cypress.Commands.add('signIntoWebfiling', ()=> {
     cy.visit(Cypress.env('baseUrl'))
+
+    // Axe
+    cy.injectAxe();
+
     cy.get('#email').type(Cypress.env('user_email'))
     cy.get('#seccode').type(Cypress.env('user_password'))
     cy.get('.button').click()

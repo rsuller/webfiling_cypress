@@ -19,6 +19,9 @@ describe('Change of registered office address', () => {
         const changeRegisteredOffice = new ChangeRegisteredOffice();
         const submissionConfirmation = new SubmissionConfirmation();
 
+        // First accessibility call
+        cy.checkA11y();
+
         companyOverview.selectLinkWithText('Change address');
 
         // Alter address - just change premise

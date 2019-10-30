@@ -18,7 +18,11 @@ const webpackOptions = {
             loader: 'ts-loader'
           }
         ]
-      }
+      },
+      {
+        test: /node_modules\/axe-core\/axe.js$/,
+        use: ['raw-loader'],
+      },
     ]
   }
 }
