@@ -53,9 +53,9 @@ Cypress.Commands.add('selectTodaysDate', ()=> {
 
     cy.log(Cypress.moment().format('Do MMMM YYYY'))
 
-    cy.get('#day-select-1').select(day);
-    cy.get('#month-select-1').select(month);
-    cy.get('#year-select-1').select(year);
+    cy.get('.selector-day').select(day);
+    cy.get('.selector-month').select(month);
+    cy.get('.selector-year').select(year);
 })
 
 Cypress.Commands.add('checkSubmitIsDisabled', ()=> {

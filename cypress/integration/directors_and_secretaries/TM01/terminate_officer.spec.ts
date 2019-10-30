@@ -31,7 +31,8 @@ describe('Change of registered office address', () => {
         cy.url().should('include', 'TM01');
         cy.get('h1').should('have.text', 'Termination of a director');
 
-        directorsAndSecretaries.applyDateOfTermination().confirmTermination();
+        cy.selectTodaysDate();
+        directorsAndSecretaries.confirmTermination();
 
         // Submission would happen at this stage
 
